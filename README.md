@@ -8,4 +8,6 @@
 ### `cd ..`
 ### `cd front_blog_app`
 
+
+### `npm i`
 ### `npm start`
