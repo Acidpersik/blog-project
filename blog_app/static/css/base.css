@@ -1,0 +1,193 @@
+body {
+  background-color: lemonchiffon;
+  position: fixed;
+  font-family: 'Impact', sans-serif;
+  font-size: 18px;
+}
+
+header {
+  border-bottom: 1px solid saddlebrown;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+header h1 a {
+  color: coral;
+  text-decoration: none;
+}
+
+.nav-left {
+  margin-right: auto;
+    padding-right: 50rem;
+}
+
+.nav-right {
+  display: flex;
+  padding-top: 2rem;
+}
+
+.post-entry {
+  margin-bottom: 10rem;
+}
+
+.post-entry h2 {
+  margin: 0.5rem 0;
+}
+
+.post-entry p {
+  margin: 0;
+  font-weight: 400;
+}
+
+.post-entry h2 a:hover {
+  color: indianred;
+}
+
+.f1{
+    background-color: coral;
+    width: 300px;
+    height: 50px;
+    position: relative;
+    transform: rotate(45deg);
+    top: 18px;
+    left: -110px;
+    z-index: -1;
+}
+.w1{
+    width: 30px;
+    height: 25px;
+    background-color: lemonchiffon;
+    transform: rotate(91deg);
+    position: absolute;
+    top: 11px;
+    left: 260px;
+}
+.w2{
+    width: 30px;
+    height: 25px;
+    background-color: lemonchiffon;
+    transform: rotate(91deg);
+    position: absolute;
+    top: 11px;
+    left: 220px;
+}
+.w3{
+    width: 30px;
+    height: 25px;
+    background-color: lemonchiffon;
+    transform: rotate(91deg);
+    position: absolute;
+    top: 11px;
+    left: 180px;
+}
+.w4{
+    width: 30px;
+    height: 25px;
+    background-color: lemonchiffon;
+    transform: rotate(91deg);
+    position: absolute;
+    top: 11px;
+    left: 90px;
+}
+.w5{
+    width: 30px;
+    height: 25px;
+    background-color: lemonchiffon;
+    transform: rotate(91deg);
+    position: absolute;
+    top: 11px;
+    left: 50px;
+}
+.w6{
+    width: 30px;
+    height: 25px;
+    background-color: lemonchiffon;
+    transform: rotate(91deg);
+    position: absolute;
+    top: 11px;
+    left: 10px;
+}
+.f2{
+    background-color: coral;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    transform: rotate(135deg);
+    top: 10px;
+    left: -110px;
+    z-index: -1;
+}
+.wf1{
+    width: 30px;
+    height: 25px;
+    background-color: lemonchiffon;
+    transform: rotate(91deg);
+    position: fixed;
+    top: 13px;
+    left: 260px;
+}
+.wf2{
+    width: 30px;
+    height: 25px;
+    background-color: lemonchiffon;
+    transform: rotate(91deg);
+    position: absolute;
+    top: 13px;
+    left: 220px;
+}
+.wf3{
+    width: 30px;
+    height: 25px;
+    background-color: lemonchiffon;
+    transform: rotate(91deg);
+    position: absolute;
+    top: 13px;
+    left: 180px;
+}
+.wf4{
+    width: 30px;
+    height: 25px;
+    background-color: lemonchiffon;
+    transform: rotate(91deg);
+    position: absolute;
+    top: 13px;
+    left: 90px;
+}
+.wf5{
+    width: 30px;
+    height: 25px;
+    background-color: lemonchiffon;
+    transform: rotate(91deg);
+    position: absolute;
+    top: 13px;
+    left: 50px;
+}
+.wf6{
+    width: 30px;
+    height: 25px;
+    background-color: lemonchiffon;
+    transform: rotate(91deg);
+    position: absolute;
+    top: 13px;
+    left: 10px;
+}
+.circle{
+    position: relative;
+    top: 40.5%;
+    left: 54.4%;
+    width: 80px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: brown;
+    animation: spin 1s linear infinite;
+    z-index: -1;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

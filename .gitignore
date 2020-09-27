@@ -1,0 +1,25 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+/blog_app/.idea
+/.idea
+
+# dependencies
+/front_blog_app/node_modules
+/front_blog_app/.pnp
+/front_blog_app/.pnp.js
+
+# testing
+/front_blog_app//coverage
+
+# production
+/front_blog_app/build
+
+# misc
+/front_blog_app/.DS_Store
+/front_blog_app/.env.local
+/front_blog_app/.env.development.local
+/front_blog_app/.env.test.local
+/front_blog_app/.env.production.local
+
+/front_blog_app/npm-debug.log*
+/front_blog_app/yarn-debug.log*
+/front_blog_app/yarn-error.log*

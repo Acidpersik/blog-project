@@ -1,0 +1,59 @@
+{% load static %}
+<html>
+  <head>
+    <title>Django blog</title>
+{#    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400">#}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+  </head>
+  <body>
+<div>
+      <header>
+        <div class="nav-left">
+          <h1><a href="{% url 'home' %}">Django blog</a></h1>
+        </div>
+        <div class="nav-right">
+          <a href="{% url 'post_new' %}">+ New Blog Post</a>
+        </div>
+      </header>
+    {% if user.is_authenticated %}
+        <p>Heeeey, {{ user.username }}!!!</p>
+        <a href="{% url 'logout' %}">Log out</a>
+    {% else %}
+        <p>You a not logged in!</p>
+        <a href="{% url 'login' %}">Log In</a>
+    {% endif %}
+      {% block content %}
+      {% endblock content %}
+    </div>
+
+  <div class="base"></div>
+            <div class="mill">
+                <div class="">
+                        <div class="circle">
+                            <div class="f1">
+                                <div window1>
+                                    <div class="w1"></div>
+                                    <div class="w2"></div>
+                                    <div class="w3"></div>
+                                    <div class="w4"></div>
+                                    <div class="w5"></div>
+                                    <div class="w6"></div>
+                                </div>
+                            </div>
+                            <div class="f2">
+                                <div class="window2">
+                                    <div class="wf1"></div>
+                                    <div class="wf2"></div>
+                                    <div class="wf3"></div>
+                                    <div class="wf4"></div>
+                                    <div class="wf5"></div>
+                                    <div class="wf6"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+  </body>
+</html>
+
+
+
