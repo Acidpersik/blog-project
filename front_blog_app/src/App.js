@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios'; // new
+import axios from 'axios';
 
 class App extends Component {
   state = {
@@ -22,18 +22,27 @@ class App extends Component {
       });
   }
 
+
   render() {
     return (
       <div>
         {this.state.todos.map(item => (
           <div key={item.id}>
             <h1>{item.title}</h1>
+            <h3>{item.author}</h3>
             <span>{item.body}</span>
           </div>
-        ))}
+          //   <table>
+          //   <tr key={item.id}> <td>{item.title} {item.}</td></tr>
+          //     </table>
+          ))}
       </div>
     );
+
   }
+
 }
+
+
 
 export default App;
