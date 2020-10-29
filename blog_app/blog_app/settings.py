@@ -42,9 +42,12 @@ INSTALLED_APPS = [
     'corsheaders',
 
     'whitenoise',
+    'accounts.apps.AccountsConfig',
     'blog',
-    'accounts',
+
 ]
+
+AUTH_USER_MODEL = 'accounts.CustomUser'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
