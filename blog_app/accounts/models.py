@@ -7,6 +7,6 @@ class CustomUser(AbstractUser):
 
 
 
-# подсчет оличества лет
+# будет подсчет количества лет автора
 def count_age():
     pass
