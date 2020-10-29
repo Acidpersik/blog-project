@@ -8,6 +8,9 @@
 ### `cd ..`
 ### `cd front_blog_app`
 
+Updating to latest version npm:
+### `npm install -g npm@latest`
+...
 
 ### `npm i`
 ### `npm start`
