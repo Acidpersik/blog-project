@@ -1,24 +1,50 @@
 body {
-  background-color: lemonchiffon;
+  background: radial-gradient(purple,indigo);
   position: fixed;
-  font-family: 'Impact', sans-serif;
+    font-family: 'Henny Penny', cursive;
   font-size: 18px;
 }
 
-header {
-  border-bottom: 1px solid saddlebrown;
-  margin-bottom: 2rem;
-  display: flex;
+a{
+    animation: blink1 3s linear infinite;
 }
 
-header h1 a {
-  color: coral;
-  text-decoration: none;
+header h1 {
+  color: indigo;
+    font-family: 'Henny Penny', cursive;
+    font-weight: 500;
+}
+
+.new_post{
+    color: orange;
+    background: black;
+    margin-left: 75%;
+    width: 15.4%;
+    height: 60%;
+    font-size: 190%;
+    font-family: 'Henny Penny', cursive;
+    margin-top: -6%;
+    border-radius: 25rem 25rem 25rem;
+    padding-left: 4%;
+}
+
+.out_in_up {
+    color: white;
+    background: black;
+    margin-left: 75%;
+    width: 15.4%;
+    height: 60%;
+    font-size: 130%;
+    font-family: 'Henny Penny', cursive;
+    border-radius: 25rem 25rem 25rem;
+    padding-left: 10%;
 }
 
 .nav-left {
-  margin-right: auto;
-    padding-right: 50rem;
+
+    font-size: 50px;
+    margin-right: auto;
+    padding-right: 70rem;
 }
 
 .nav-right {
@@ -26,25 +52,8 @@ header h1 a {
   padding-top: 2rem;
 }
 
-.post-entry {
-  margin-bottom: 10rem;
-}
-
-.post-entry h2 {
-  margin: 0.5rem 0;
-}
-
-.post-entry p {
-  margin: 0;
-  font-weight: 400;
-}
-
-.post-entry h2 a:hover {
-  color: indianred;
-}
-
 .f1{
-    background-color: coral;
+    background-color: indigo;
     width: 300px;
     height: 50px;
     position: relative;
@@ -56,7 +65,7 @@ header h1 a {
 .w1{
     width: 30px;
     height: 25px;
-    background-color: lemonchiffon;
+    background-color: white;
     transform: rotate(91deg);
     position: absolute;
     top: 11px;
@@ -65,7 +74,7 @@ header h1 a {
 .w2{
     width: 30px;
     height: 25px;
-    background-color: lemonchiffon;
+    background-color: white;
     transform: rotate(91deg);
     position: absolute;
     top: 11px;
@@ -74,7 +83,7 @@ header h1 a {
 .w3{
     width: 30px;
     height: 25px;
-    background-color: lemonchiffon;
+    background-color: white;
     transform: rotate(91deg);
     position: absolute;
     top: 11px;
@@ -83,7 +92,7 @@ header h1 a {
 .w4{
     width: 30px;
     height: 25px;
-    background-color: lemonchiffon;
+    background-color: white;
     transform: rotate(91deg);
     position: absolute;
     top: 11px;
@@ -92,7 +101,7 @@ header h1 a {
 .w5{
     width: 30px;
     height: 25px;
-    background-color: lemonchiffon;
+    background-color: white;
     transform: rotate(91deg);
     position: absolute;
     top: 11px;
@@ -101,14 +110,15 @@ header h1 a {
 .w6{
     width: 30px;
     height: 25px;
-    background-color: lemonchiffon;
+    background-color: white;
     transform: rotate(91deg);
     position: absolute;
     top: 11px;
     left: 10px;
 }
 .f2{
-    background-color: coral;
+    animation: blink1 3s linear infinite;
+    background-color: indigo;
     width: 300px;
     height: 50px;
     position: absolute;
@@ -120,7 +130,7 @@ header h1 a {
 .wf1{
     width: 30px;
     height: 25px;
-    background-color: lemonchiffon;
+    background-color: aliceblue;
     transform: rotate(91deg);
     position: fixed;
     top: 13px;
@@ -129,7 +139,7 @@ header h1 a {
 .wf2{
     width: 30px;
     height: 25px;
-    background-color: lemonchiffon;
+    background-color: aliceblue;
     transform: rotate(91deg);
     position: absolute;
     top: 13px;
@@ -138,7 +148,7 @@ header h1 a {
 .wf3{
     width: 30px;
     height: 25px;
-    background-color: lemonchiffon;
+    background-color: aliceblue;
     transform: rotate(91deg);
     position: absolute;
     top: 13px;
@@ -147,7 +157,7 @@ header h1 a {
 .wf4{
     width: 30px;
     height: 25px;
-    background-color: lemonchiffon;
+    background-color: aliceblue;
     transform: rotate(91deg);
     position: absolute;
     top: 13px;
@@ -156,7 +166,7 @@ header h1 a {
 .wf5{
     width: 30px;
     height: 25px;
-    background-color: lemonchiffon;
+    background-color: aliceblue;
     transform: rotate(91deg);
     position: absolute;
     top: 13px;
@@ -165,7 +175,7 @@ header h1 a {
 .wf6{
     width: 30px;
     height: 25px;
-    background-color: lemonchiffon;
+    background-color: aliceblue;
     transform: rotate(91deg);
     position: absolute;
     top: 13px;
@@ -175,12 +185,22 @@ header h1 a {
     position: relative;
     top: 40.5%;
     left: 54.4%;
-    width: 80px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    background-color: brown;
+    background-color: indigo;
     animation: spin 1s linear infinite;
     z-index: -1;
+}
+
+@keyframes blink1 {
+
+    0% { color: yellow; }
+    20% { color: deepskyblue; }
+    40% { color: indigo; }
+    60% { color: orchid}
+    80% { color: chocolate}
+    100% { color: aliceblue}
 }
 
 @keyframes spin {
@@ -191,3 +211,4 @@ header h1 a {
         transform: rotate(360deg);
     }
 }
+
