@@ -3,11 +3,12 @@ from blog.models import Post
 from .serializers import PostSerializer
 
 
-class ListPost(generics.ListAPIView):
+class ListPost(generics.ListCreateAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
 
 
-class DetailPost(generics.RetrieveAPIView):
+class DetailPost(generics.RetrieveUpdateDestroyAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
+
