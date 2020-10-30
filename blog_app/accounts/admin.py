@@ -10,12 +10,6 @@ class AuthorUserAdmin(UserAdmin):
     form = AuthorChangeForm
     model = CustomUser
     list_display = ['email', 'username', 'birth_date', 'twitter_link', ]
-    fieldsets = UserAdmin.fieldsets + (
-        (None, {'fields': ('birth_date', 'twitter_link', )}),
-    )
-    add_fieldsets = UserAdmin.add_fieldsets + (
-        (None, {'fields': ('birth_date', 'twitter_link', )})
-    )
 
 
 admin.site.register(CustomUser, AuthorUserAdmin)
