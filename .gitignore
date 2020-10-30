@@ -5,6 +5,7 @@ __pycache__/
 
 
 /blog_app/.idea
+/blog_app/db.sqlite3
 /.idea
 
 # dependencies
