@@ -3,7 +3,17 @@
 {% block title %}Profile{% endblock title %}
 
 {% block content %}
-
+<div>
 My name is {{ customuser.username}}
+    </br></br>
+    Email: {{ customuser.email }}
+    </br></br>
+    Twitter: {{ customuser.twitter_link }}
+    </br></br>
+    My birthday: {{ customuser.birth_date }}
+    </br></br>
+    </div>
+
+   <img src="https://boardandbrush.com/wp-content/uploads/2019/10/halloween-2019-blog-1-1.jpg"></img>
 
 {% endblock content %}

@@ -6,7 +6,7 @@ __pycache__/
 
 /blog_app/.idea
 /.idea
-/blog_app/db.sqlite3
+db.sqlite3
 
 # dependencies
 /front_blog_app/node_modules

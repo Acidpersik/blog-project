@@ -15,3 +15,4 @@ class CustomUserDetailView(DetailView):
     model = CustomUser
     template_name = 'profile.html'
 
+
